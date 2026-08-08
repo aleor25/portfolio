@@ -13,9 +13,9 @@ const exampleTechnologies = [
 ]
 
 const exampleActions = [
-    { label: 'View Details', url: '#', type: 'gradient', icon: undefined },
-    { label: 'Watch Demo', url: '#', type: 'outline', icon: undefined },
-    { label: 'Go to Code', url: '#', type: 'outline', icon: undefined },
+    { label: 'View Details', url: '#', type: 'gradient' as const, icon: undefined },
+    { label: 'Watch Demo', url: '#', type: 'outline' as const, icon: undefined },
+    { label: 'Go to Code', url: '#', type: 'outline' as const, icon: undefined },
 ]
 
 export default function ProjectCardExample() {

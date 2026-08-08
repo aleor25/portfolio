@@ -24,6 +24,18 @@
 .DS_Store
 *.pem
 
+# IDEs
+.vscode/
+.idea/
+
+# build / output
+dist/
+build/
+
+# local env overrides
+.env.local
+.env.*.local
+
 # debug
 npm-debug.log*
 yarn-debug.log*

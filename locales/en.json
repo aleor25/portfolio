@@ -1,0 +1,20 @@
+{
+  "header": {
+    "title": "My Portfolio",
+    "experiencia": "Experience",
+    "proyectos": "Projects",
+    "sobreMi": "About"
+  },
+  "profile": {
+    "title": "Professional Profile",
+    "description": "Full-Stack Developer able to translate requirements into scalable solutions, prioritizing performance, user experience and maintainability.\nInterest in technological solutions for industrial environments and critical systems. Experience with modern stacks and enterprise ecosystems."
+  },
+  "projects": {
+    "title": "Projects"
+  },
+  "actions": {
+    "viewDetails": "View Details",
+    "watchDemo": "Watch Demo",
+    "goToCode": "View Code"
+  }
+}

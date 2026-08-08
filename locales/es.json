@@ -1,0 +1,20 @@
+{
+  "header": {
+    "title": "Mi Portafolio",
+    "experiencia": "Experiencia",
+    "proyectos": "Proyectos",
+    "sobreMi": "Sobre mí"
+  },
+  "profile": {
+    "title": "Perfil profesional",
+    "description": "Desarrollador Full-Stack capaz de traducir requerimientos en soluciones\nescalables, priorizando rendimiento, experiencia de usuario y mantenibilidad.\nInterés en el desarrollo de soluciones tecnológicas para entornos industriales\ny sistemas críticos. Experiencia en stacks modernos y ecosistemas\nempresariales."
+  },
+  "projects": {
+    "title": "Proyectos"
+  },
+  "actions": {
+    "viewDetails": "Ver detalles",
+    "watchDemo": "Ver demo",
+    "goToCode": "Ver código"
+  }
+}

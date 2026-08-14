@@ -1,9 +1,15 @@
+import ProjectsSection from '@/components/ProjectsSection'
+import PortfolioMain from '../components/PortfolioMain'
+import Header from '@/components/Header'
+
 export default function Home() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-neutral-900 text-white">
-      <main className="text-center p-8">
-        <h1 className="text-4xl font-bold mb-4">La aplicación está en mantenimiento</h1>
-        <p className="text-gray-300 mb-6">Estamos realizando mejoras y actualizaciones. Volveremos en breve.</p>
+    <div className="min-h-screen bg-[#121212] text-white selection:bg-sky-500/30">
+      <Header />
+
+      <main className="flex flex-col pb-20">
+        <PortfolioMain />
+        <ProjectsSection />
       </main>
     </div>
   )

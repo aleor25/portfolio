@@ -16,7 +16,7 @@ export default function ProjectsSection() {
             key={p.id}
             title={p.title}
             description={p.description}
-            mockupImageUrl={p.mockupImageUrl}
+            images={p.images}
             mockupBackgroundColor={p.mockupBackgroundColor}
             technologies={p.technologies}
             actions={p.actions}

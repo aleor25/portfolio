@@ -14,11 +14,14 @@ export default function PortfolioMain() {
   }
 
   return (
-    <section id="sobre-mi" className="max-w-4xl mx-auto px-4 py-12">
+    // Contenedor universal alineado
+    <section id="sobre-mi" className="max-w-6xl mx-auto w-full px-6 lg:px-12 py-12">
       <h1 className="text-6xl font-bold mb-4 text-white">{t('profile.name')}</h1>
       <p className="text-3xl text-sky-400 whitespace-pre-line mb-8 font-semibold">{t('profile.role')}</p>
 
       <div className="flex flex-wrap items-center gap-6">
+
+        {/* GitHub */}
         <a
           href="https://github.com/aleor25"
           target="_blank"
@@ -31,6 +34,7 @@ export default function PortfolioMain() {
           </svg>
         </a>
 
+        {/* LinkedIn */}
         <a
           href="https://linkedin.com/in/aleor"
           target="_blank"
@@ -43,6 +47,7 @@ export default function PortfolioMain() {
           </svg>
         </a>
 
+        {/* Botón de Copiar Email */}
         <div className="relative flex items-center">
           <button
             onClick={handleCopyEmail}
@@ -52,9 +57,7 @@ export default function PortfolioMain() {
             <svg className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
               <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 18H4V8L12 13L20 8V18ZM12 11L4 6H20L12 11Z" />
             </svg>
-
             <span className="font-medium tracking-tight">{email}</span>
-
             {copied ? (
               <svg className="w-5 h-5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
@@ -72,6 +75,24 @@ export default function PortfolioMain() {
             {t('profile.copied')}
           </span>
         </div>
+
+        {/* Botón de Descarga CV */}
+        <a
+          href="/cv/Alejandro_Ortiz_Pérez_CV_Desarrollador_FullStack.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          download
+          className="flex items-center gap-2.5 px-6 h-12 rounded-2xl bg-sky-500 text-neutral-950 font-bold hover:bg-sky-400 transition-all duration-300 shadow-[0_0_15px_rgba(14,165,233,0.3)] hover:shadow-[0_0_25px_rgba(14,165,233,0.5)] active:scale-95"
+          aria-label="Descargar Curriculum Vitae"
+        >
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          <span>Curriculum</span>
+        </a>
+
       </div>
     </section>
   )

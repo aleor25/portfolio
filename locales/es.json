@@ -6,15 +6,37 @@
     "sobreMi": "Sobre mí"
   },
   "profile": {
+    "name": "Alejandro Ortiz",
+    "role": "Desarrollador Full-Stack",
     "title": "Perfil profesional",
-    "description": "Desarrollador Full-Stack capaz de traducir requerimientos en soluciones\nescalables, priorizando rendimiento, experiencia de usuario y mantenibilidad.\nInterés en el desarrollo de soluciones tecnológicas para entornos industriales\ny sistemas críticos. Experiencia en stacks modernos y ecosistemas\nempresariales."
+    "description": "Desarrollador Full-Stack capaz de traducir requerimientos en soluciones\nescalables, priorizando rendimiento, experiencia de usuario y mantenibilidad.\nInterés en el desarrollo de soluciones tecnológicas para entornos industriales\ny sistemas críticos. Experiencia en stacks modernos y ecosistemas\nempresariales.",
+    "social": {
+      "github": "GitHub de Alejandro Ortiz",
+      "linkedin": "LinkedIn de Alejandro Ortiz"
+    },
+    "copyEmail": "Copiar correo electrónico",
+    "copied": "¡Copiado al portapapeles!"
   },
   "projects": {
-    "title": "Proyectos"
+    "title": "Proyectos",
+    "azkali": {
+      "title": "Azkali",
+      "description": "Copiloto financiero conductual que genera fricción cognitiva en compras impulsivas mostrando costos en horas de trabajo."
+    },
+    "redoc": {
+      "title": "REDOC",
+      "description": "Sistema de gestión documental con vistas duales y modals; backend seguro con FastAPI y frontend en Next.js y Tailwind."
+    }
   },
   "actions": {
     "viewDetails": "Ver detalles",
     "watchDemo": "Ver demo",
     "goToCode": "Ver código"
+  },
+  "projectCard": {
+    "previousImage": "Imagen anterior",
+    "nextImage": "Siguiente imagen",
+    "goToImage": "Ir a la imagen {index}",
+    "imageOf": "Vista {current} de {title}"
   }
 }

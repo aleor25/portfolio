@@ -8,7 +8,7 @@ type Translations = typeof en
 type I18nContextType = {
   locale: string
   setLocale: (l: string) => void
-  t: (key: string) => string
+  t: (key: string, params?: Record<string, string | number>) => string
 }
 
 const I18nContext = createContext<I18nContextType | undefined>(undefined)
@@ -17,6 +17,13 @@ const resources: Record<string, Translations> = { en, es }
 
 function getNested(obj: any, path: string) {
   return path.split('.').reduce((o, p) => (o ? o[p] : undefined), obj)
+}
+
+function interpolate(value: string, params?: Record<string, string | number>) {
+  if (!params) return value
+  return Object.entries(params).reduce((result, [key, val]) => {
+    return result.replace(new RegExp(`\\{${key}\\}`, 'g'), String(val))
+  }, value)
 }
 
 export function I18nProvider({ children }: { children: React.ReactNode }) {
@@ -33,11 +40,11 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
     if (typeof window !== 'undefined') localStorage.setItem('locale', l)
   }
 
-  const t = (key: string) => {
+  const t = (key: string, params?: Record<string, string | number>) => {
     const r = resources[locale] || resources['es']
     const found = getNested(r, key)
-    if (typeof found === 'string') return found
-    return key
+    if (typeof found === 'string') return interpolate(found, params)
+    return interpolate(key, params)
   }
 
   return (

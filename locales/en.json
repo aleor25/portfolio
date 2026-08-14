@@ -6,15 +6,37 @@
     "sobreMi": "About"
   },
   "profile": {
-    "title": "Professional Profile",
-    "description": "Full-Stack Developer able to translate requirements into scalable solutions, prioritizing performance, user experience and maintainability.\nInterest in technological solutions for industrial environments and critical systems. Experience with modern stacks and enterprise ecosystems."
+    "name": "Alejandro Ortiz",
+    "role": "Full-Stack Developer",
+    "title": "Professional profile",
+    "description": "Full-Stack developer able to translate requirements into scalable solutions, prioritizing performance, user experience, and maintainability. Interested in building technological solutions for industrial environments and critical systems. Experience with modern stacks and enterprise ecosystems.",
+    "social": {
+      "github": "Alejandro Ortiz GitHub profile",
+      "linkedin": "Alejandro Ortiz LinkedIn profile"
+    },
+    "copyEmail": "Copy email",
+    "copied": "Copied to clipboard!"
   },
   "projects": {
-    "title": "Projects"
+    "title": "Projects",
+    "azkali": {
+      "title": "Azkali",
+      "description": "Behavioral financial copilot that creates cognitive friction in impulsive purchases by showing costs in work hours."
+    },
+    "redoc": {
+      "title": "REDOC",
+      "description": "Document management system with dual views and modals; secure backend with FastAPI and frontend in Next.js and Tailwind."
+    }
   },
   "actions": {
     "viewDetails": "View Details",
     "watchDemo": "Watch Demo",
     "goToCode": "View Code"
+  },
+  "projectCard": {
+    "previousImage": "Previous image",
+    "nextImage": "Next image",
+    "goToImage": "Go to image {index}",
+    "imageOf": "View {current} of {title}"
   }
 }

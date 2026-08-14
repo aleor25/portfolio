@@ -1,65 +1,67 @@
-import type { ReactNode } from 'react'
+import type { Tech, Action } from '../components/ProjectCard'
+import { TECH } from './technologies'
 
 export type Project = {
   id: string
   title: string
   description: string
-  mockupImageUrl: string
+  images: string[]
   mockupBackgroundColor?: string
-  technologies: { name: string; color?: string; icon?: ReactNode }[]
-  actions: { label: string; url?: string; icon?: ReactNode; type?: 'gradient' | 'outline' }[]
+  technologies: Tech[]
+  actions: Action[]
 }
 
 export const projects: Project[] = [
   {
     id: 'azkali',
-    title: 'Azkali — Supermarket Landing page',
-    description: 'Landing page y experiencia móvil para supermercado, con fichas de producto, hero y flujo de checkout. Implementación responsiva y accesible.',
-    mockupImageUrl: '/images/mockups/azkali.jpg',
-    mockupBackgroundColor: '#065f46',
+    title: 'projects.azkali.title',
+    description: 'projects.azkali.description',
+    images: [
+      '/projects/azkali/general.webp',
+      '/projects/azkali/ai-mobile-experience.webp',
+      '/projects/azkali/product-landing-page.webp',
+      '/projects/azkali/ai-and-supabase-backend.webp'
+    ],
+    mockupBackgroundColor: '#064e3b',
     technologies: [
-      { name: 'React Native', color: '#61dafb' },
-      { name: 'Tailwind CSS', color: '#06b6d4' },
-      { name: 'Supabase', color: '#22c55e' },
+      TECH.reactNative,
+      TECH.expo,
+      TECH.nextjs,
+      TECH.typescript,
+      TECH.tailwind,
+      TECH.supabase,
+      TECH.postgresql,
+      TECH.python,
+      TECH.gemini
     ],
     actions: [
-      { label: 'View Details', url: '#', type: 'gradient' },
-      { label: 'Watch Demo', url: '#', type: 'outline' },
-      { label: 'Go to Code', url: '#', type: 'outline' },
-    ],
+      { label: 'actions.watchDemo', url: 'https://www.youtube.com/watch?v=orvfws_kxcc', type: 'gradient' },
+      { label: 'actions.goToCode', url: 'https://github.com/chrisssp/azkali', type: 'outline' }
+    ]
   },
   {
     id: 'redoc',
-    title: 'REDOC — Gestión documental',
-    description: 'Sistema de gestión documental con vistas duales y modals; backend seguro con FastAPI y frontend en Next.js y Tailwind.',
-    mockupImageUrl: '/images/mockups/redoc.jpg',
+    title: 'projects.redoc.title',
+    description: 'projects.redoc.description',
+    images: [
+      '/projects/redoc/Inicio de sesión.png',
+      '/projects/redoc/Dashboard - Expedientes.png',
+      '/projects/redoc/Modal - Detalles del expediente.png'
+    ],
     mockupBackgroundColor: '#0f172a',
     technologies: [
-      { name: 'Next.js', color: '#000' },
-      { name: 'FastAPI', color: '#009688' },
-      { name: 'PostgreSQL', color: '#336791' },
+      TECH.nextjs,
+      TECH.react,
+      TECH.typescript,
+      TECH.tailwind,
+      TECH.sqlServer,
+      TECH.fastapi,
     ],
     actions: [
-      { label: 'View Details', url: '#', type: 'gradient' },
-      { label: 'Go to Code', url: '#', type: 'outline' },
-    ],
-  },
-  {
-    id: 'dabetai',
-    title: 'DabetAI — Microservicios médicos',
-    description: 'Plataforma cliente–servidor para gestión de pacientes e integración de ML para detección de retinopatía.',
-    mockupImageUrl: '/images/mockups/dabetai.jpg',
-    mockupBackgroundColor: '#1f2937',
-    technologies: [
-      { name: 'FastAPI', color: '#009688' },
-      { name: 'Python', color: '#3776ab' },
-      { name: 'React Native', color: '#61dafb' },
-    ],
-    actions: [
-      { label: 'View Details', url: '#', type: 'gradient' },
-      { label: 'Watch Demo', url: '#', type: 'outline' },
-    ],
-  },
+      { label: 'actions.viewDetails', url: '#', type: 'gradient' },
+      { label: 'actions.goToCode', url: 'https://github.com/aleor25/REDOC', type: 'outline' }
+    ]
+  }
 ]
 
 export default projects

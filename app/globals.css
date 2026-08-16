@@ -1,16 +1,23 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@variant dark (&:where(.dark, .dark *));
 
-  /* Variables del Scrollbar: MODO CLARO */
-  --sb-track: #f8fafc;
-  /* Gris extra claro */
+:root {
+  /* MODO CLARO */
+  --background: #f8fafc;
+  --foreground: #171717;
+  --sb-track: #f1f5f9;
   --sb-thumb: #cbd5e1;
-  /* Gris medio para el indicador */
   --sb-thumb-hover: #0ea5e9;
-  /* Azul cielo */
+}
+
+.dark {
+  /* MODO OSCURO */
+  --background: #121212;
+  --foreground: #ededed;
+  --sb-track: #121212;
+  --sb-thumb: #3f3f46;
+  --sb-thumb-hover: #0ea5e9;
 }
 
 @theme inline {

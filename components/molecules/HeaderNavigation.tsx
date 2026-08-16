@@ -1,4 +1,4 @@
-import NavItemLink from '@/components/atoms/NavItemLink'
+import NavItemLink from "../atoms/NavItemLink"
 
 type NavItem = {
     id: string
@@ -13,8 +13,8 @@ type HeaderNavigationProps = {
 
 export default function HeaderNavigation({ navItems, activeSection }: HeaderNavigationProps) {
     return (
-        <nav className="bg-neutral-900/80 border border-white/10 rounded-2xl px-2.5 py-2 backdrop-blur-md shadow-lg hidden md:block">
-            <ul className="flex items-center gap-1.5 text-base font-bold">
+        <nav className="h-12 hidden md:block bg-white/80 dark:bg-neutral-900/80 border border-neutral-200 dark:border-white/10 rounded-2xl px-2 py-1.5 backdrop-blur-md shadow-lg transition-colors duration-300">
+            <ul className="flex items-center gap-1 text-sm font-semibold">
                 {navItems.map((item) => (
                     <li key={item.id}>
                         <NavItemLink
@@ -29,3 +29,4 @@ export default function HeaderNavigation({ navItems, activeSection }: HeaderNavi
         </nav>
     )
 }
+

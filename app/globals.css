@@ -3,6 +3,14 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Variables del Scrollbar: MODO CLARO */
+  --sb-track: #f8fafc;
+  /* Gris extra claro */
+  --sb-thumb: #cbd5e1;
+  /* Gris medio para el indicador */
+  --sb-thumb-hover: #0ea5e9;
+  /* Azul cielo */
 }
 
 @theme inline {
@@ -14,13 +22,89 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #121212;
     --foreground: #ededed;
+
+    /* Variables del Scrollbar: MODO OSCURO */
+    --sb-track: #121212;
+    /* Se funde perfectamente con el fondo */
+    --sb-thumb: #3f3f46;
+    /* Gris neutro visible y de buen contraste */
+    --sb-thumb-hover: #0ea5e9;
+    /* Azul cielo */
+
+    ::-webkit-scrollbar-button:single-button:vertical:decrement {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2371717a'%3E%3Cpath d='M12 8l-6 6h12z'/%3E%3C/svg%3E");
+    }
+
+    ::-webkit-scrollbar-button:single-button:vertical:increment {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2371717a'%3E%3Cpath d='M12 16l-6-6h12z'/%3E%3C/svg%3E");
+    }
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+
+  /* Estándar moderno (Firefox y navegadores nuevos) */
+  scrollbar-width: auto;
+  scrollbar-color: var(--sb-thumb) var(--sb-track);
+}
+
+/* =========================================================
+    Personalización de Webkit (Chrome, Safari, Edge)
+   ========================================================= */
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sb-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb);
+  border-radius: 8px;
+  border: 3px solid var(--sb-track);
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sb-thumb-hover);
+}
+
+/* =========================================================
+    Flechas del Scrollbar (Botones superior e inferior)
+   ========================================================= */
+
+::-webkit-scrollbar-button:single-button {
+  background-color: var(--sb-track);
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background-color: var(--sb-track);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2394a3b8'%3E%3Cpath d='M12 6l-8 10h16z'/%3E%3C/svg%3E");
+  background-size: 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 24px;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  background-color: var(--sb-track);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2394a3b8'%3E%3Cpath d='M12 18l-8-10h16z'/%3E%3C/svg%3E");
+  background-size: 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 24px;
 }

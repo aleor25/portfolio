@@ -26,13 +26,67 @@
     "redoc": {
       "title": "REDOC",
       "description": "Document management system with dual views and modals; secure backend with FastAPI and frontend in Next.js and Tailwind."
+    },
+    "dabetai": {
+      "title": "DabetAI",
+      "description": "Preventive ecosystem for diabetes complications connecting wearables with medical dashboards, enabling risk prediction and improving efficiency by ~40%."
+    },
+    "iapex": {
+      "title": "IAPEX (Encuéntrame)",
+      "description": "Biometric system that identifies unconscious patients in seconds, reducing emergency identification delays by over 90% compared to manual protocols."
+    }
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "azkali": {
+      "role": "Frontend Developer / Technical Analyst",
+      "company": "Azkali (Banco Azteca Hackathon)",
+      "location": "Mexico City",
+      "period": "Apr 2026",
+      "description": "Participated in mobile development and component layout using React Native and Expo to consume and render structured real-time AI responses. Collaborated on wireframes and conversational flows implementing positive cognitive friction for a virtual assistant, while debugging directly on physical devices to ensure a smooth and stable demonstration."
+    },
+    "tasf": {
+      "role": "Java Developer / Systems Analyst",
+      "company": "TASF",
+      "location": "Puebla, Mexico",
+      "period": "Jan 2026 – Mar 2026",
+      "description": "Led the modernization of legacy financial systems using Java, an MVC pattern with Apache Struts, and ZK Framework. Managed Web Services consumption, multi-layer error tracking, and transactional integrity, automating functional integration tests with Katalon Studio under a Data-Driven Testing approach to validate business logic."
+    },
+    "redoc": {
+      "role": "Full-Stack Developer",
+      "company": "REDOC — UTCV",
+      "location": "Puebla, Mexico",
+      "period": "Jan 2026 – Mar 2026",
+      "description": "Designed and implemented the architecture of a document management system with advanced hybrid interfaces (Dual View and Modals) using Next.js 14 and Tailwind CSS. Developed a secure backend with FastAPI incorporating robust authentication schemes, and optimized the relational database in SQL Server using T-SQL scripts to ensure strict referential integrity."
+    },
+    "dabetai": {
+      "role": "Back-End Developer / Software Architect",
+      "company": "DabetAI",
+      "location": "Cuitláhuac, Veracruz",
+      "period": "Sep 2024 – Dec 2025",
+      "description": "Designed client-server architecture integrating FastAPI and React Native through microservices and an integrated REST API for patient management and medical trend visualization. Also integrated Machine Learning models focused on diabetic retinopathy prediction, achieving an 85% accuracy rate in testing phases."
+    },
+    "ecommerce": {
+      "role": "Full-Stack Developer / Analyst",
+      "company": "E-commerce",
+      "location": "Cuitláhuac, Veracruz",
+      "period": "May 2025 – Aug 2025",
+      "description": "Built an end-to-end e-commerce platform from scratch, spanning UI/UX prototyping in Figma to developing an interactive, responsive frontend in React, implementing optimized asynchronous state validations."
+    },
+    "iapex": {
+      "role": "Developer and Analyst",
+      "company": "IAPEX — UTCV",
+      "location": "Cuitláhuac, Veracruz",
+      "period": "Feb 2024 – Mar 2025",
+      "description": "Architected an institutional web solution using Angular, Node.js, and PostgreSQL. Actively participated in gathering, analyzing, and documenting functional and non-functional requirements, ensuring deliverable quality through unit and integration testing."
     }
   },
   "actions": {
     "viewDetails": "View Details",
     "watchDemo": "Watch Demo",
     "goToCode": "View Code",
-    "goToWebsite": "View Website"
+    "goToWebsite": "View Website",
+    "readArticle": "Read article"
   },
   "projectCard": {
     "previousImage": "Previous image",

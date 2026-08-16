@@ -15,12 +15,10 @@ export default function Navbar() {
         <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-[#121212]/70 border-b border-white/10">
             <div className="max-w-6xl mx-auto px-6 lg:px-12 py-4 flex justify-between items-center">
 
-                {/* Logo / Nombre */}
                 <div className="text-sky-400 font-mono font-bold text-lg tracking-tight cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                     &lt;<span className="text-white">aleor25</span>/&gt;
                 </div>
 
-                {/* Navegación Desktop y Switcher de Idioma */}
                 <div className="flex items-center gap-6">
                     <nav className="hidden md:block bg-neutral-900/80 border border-white/10 rounded-2xl px-2 py-1.5 shadow-lg">
                         <ul className="flex items-center gap-1">
@@ -37,7 +35,6 @@ export default function Navbar() {
                         </ul>
                     </nav>
 
-                    {/* Botones de Idioma */}
                     <div className="bg-neutral-900/80 border border-white/10 rounded-2xl p-1 flex items-center shadow-lg">
                         <button
                             onClick={() => setLocale('es')}

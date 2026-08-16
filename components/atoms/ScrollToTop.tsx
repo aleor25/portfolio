@@ -5,10 +5,8 @@ import React, { useState, useEffect } from 'react'
 export default function ScrollToTop() {
     const [isVisible, setIsVisible] = useState(false)
 
-    // Efecto para vigilar la posición del scroll
     useEffect(() => {
         const toggleVisibility = () => {
-            // Muestra el botón si el usuario baja más de 300px
             if (window.scrollY > 300) {
                 setIsVisible(true)
             } else {
@@ -16,14 +14,11 @@ export default function ScrollToTop() {
             }
         }
 
-        // Escucha el evento de scroll
         window.addEventListener('scroll', toggleVisibility)
 
-        // Limpia el evento cuando el componente se desmonta
         return () => window.removeEventListener('scroll', toggleVisibility)
     }, [])
 
-    // Función para volver arriba suavemente
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -40,7 +35,6 @@ export default function ScrollToTop() {
                     : 'opacity-0 translate-y-10 pointer-events-none scale-90'
                 }`}
         >
-            {/* Icono de flecha hacia arriba */}
             {TECH.arrowUp.icon}
         </button>
     )

@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import { I18nProvider } from '../lib/i18n'
 import { Analytics } from '@vercel/analytics/react'
+import ThemeProvider from '@/components/atoms/ThemeProvider'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -24,11 +25,16 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
     <html
       lang="es"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning={true}
     >
       <body className="min-h-full flex flex-col">
-        <I18nProvider>{children}</I18nProvider>
+        <I18nProvider>
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+            {children}
+          </ThemeProvider>
+        </I18nProvider>
         <Analytics />
       </body>
-    </html>
+    </html >
   )
 }

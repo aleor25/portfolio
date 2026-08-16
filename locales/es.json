@@ -26,14 +26,67 @@
     "redoc": {
       "title": "REDOC",
       "description": "Sistema de gestión documental con vistas duales y modals; backend seguro con FastAPI y frontend en Next.js y Tailwind."
+    },
+    "dabetai": {
+      "title": "DabetAI",
+      "description": "Ecosistema preventivo de complicaciones de la diabetes que conecta wearables con tableros médicos, permitiendo la predicción de riesgos y mejorando la eficiencia en ~40%."
+    },
+    "iapex": {
+      "title": "IAPEX (Encuéntrame)",
+      "description": "Sistema biométrico que identifica pacientes inconscientes en segundos, reduciendo los retrasos en la identificación de emergencias en más del 90% frente a protocolos manuales."
+    }
+  },
+  "experience": {
+    "title": "Experiencia Profesional",
+    "azkali": {
+      "role": "Frontend Developer / Analista Técnico",
+      "company": "Azkali (Hackathon Banco Azteca)",
+      "location": "Ciudad de México",
+      "period": "Abr 2026",
+      "description": "Participé en el desarrollo móvil y la maquetación de componentes en React Native y Expo para consumir y renderizar respuestas estructuradas en tiempo real. Colaboré en el diseño de wireframes y flujos conversacionales implementando fricción cognitiva positiva para un asistente virtual, realizando además depuración directa en dispositivos físicos para garantizar una demostración fluida y estable."
+    },
+    "tasf": {
+      "role": "Desarrollador Java / Analista de Sistemas",
+      "company": "TASF",
+      "location": "Puebla, México",
+      "period": "Ene 2026 – Mar 2026",
+      "description": "Lideré la modernización de sistemas financieros heredados mediante Java, un patrón MVC con Apache Struts y ZK Framework. Gestioné el consumo de Web Services, la trazabilidad de errores multicapa y la integridad transaccional, automatizando pruebas de integración funcionales con Katalon Studio bajo un enfoque Data-Driven Testing para validar la lógica de negocio."
+    },
+    "redoc": {
+      "role": "Desarrollador Full-Stack",
+      "company": "REDOC — UTCV",
+      "location": "Puebla, México",
+      "period": "Ene 2026 – Mar 2026",
+      "description": "Diseñé e implementé la arquitectura de un sistema de gestión documental con interfaces híbridas avanzadas en Next.js 14 y Tailwind CSS. Desarrollé un backend seguro con FastAPI incorporando esquemas robustos de autenticación, y optimicé la base de datos relacional en SQL Server mediante scripts T-SQL para garantizar una estricta integridad referencial."
+    },
+    "dabetai": {
+      "role": "Back-End Developer / Arquitecto de Software",
+      "company": "DabetAI",
+      "location": "Cuitláhuac, Veracruz",
+      "period": "Sep 2024 – Dic 2025",
+      "description": "Diseñé la arquitectura cliente-servidor integrando FastAPI y React Native a través de microservicios y una API REST integral para la gestión de pacientes y tendencias médicas. Asimismo, integré modelos de Machine Learning orientados a la predicción de retinopatía diabética, logrando alcanzar un 85% de precisión en su fase de pruebas."
+    },
+    "ecommerce": {
+      "role": "Desarrollador Full-Stack / Analista",
+      "company": "E-commerce",
+      "location": "Cuitláhuac, Veracruz",
+      "period": "May 2025 – Ago 2025",
+      "description": "Construí de forma integral una plataforma de comercio electrónico desde cero, abarcando desde el prototipado de UI/UX en Figma hasta el desarrollo de un frontend interactivo y responsivo en React, implementando validaciones de estado asíncronas optimizadas."
+    },
+    "iapex": {
+      "role": "Desarrollador y Analista",
+      "company": "IAPEX — UTCV",
+      "location": "Cuitláhuac, Veracruz",
+      "period": "Feb 2024 – Mar 2025",
+      "description": "Arquitecté una solución web institucional utilizando Angular, Node.js y PostgreSQL. Participé activamente en el levantamiento, análisis y documentación exhaustiva de requerimientos funcionales y no funcionales, asegurando la calidad del entregable mediante pruebas unitarias y de integración."
     }
   },
   "actions": {
     "viewDetails": "Ver detalles",
     "watchDemo": "Ver demo",
     "goToCode": "Ver código",
-    "goToWebsite": "Ir al sitio web"
-
+    "goToWebsite": "Ir al sitio web",
+    "readArticle": "Leer artículo"
   },
   "projectCard": {
     "previousImage": "Imagen anterior",

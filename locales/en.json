@@ -31,7 +31,8 @@
   "actions": {
     "viewDetails": "View Details",
     "watchDemo": "Watch Demo",
-    "goToCode": "View Code"
+    "goToCode": "View Code",
+    "goToWebsite": "View Website"
   },
   "projectCard": {
     "previousImage": "Previous image",

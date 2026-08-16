@@ -11,10 +11,18 @@ import {
   SiPostgresql,
   SiPython,
   SiFastapi,
-  SiGooglegemini
+  SiGooglegemini,
+  SiMongodb,
+  SiAngular,
+  SiIonic,
+  SiSpringboot,
+  SiJavascript
 } from 'react-icons/si'
 
 import { TbCopy, TbDownload } from "react-icons/tb";
+
+import { MdDarkMode, MdBrightnessHigh } from "react-icons/md";
+
 
 import { RiLinkedinBoxFill, RiGithubFill, RiCopyrightLine, RiArrowUpSLine } from 'react-icons/ri'
 
@@ -54,6 +62,16 @@ export const TECH: Record<string, Tech> = {
     name: 'Copyright',
     color: '#000',
     icon: <RiCopyrightLine className="w-4 h-4" />
+  },
+  darkMode: {
+    name: 'Dark Mode',
+    color: '#000',
+    icon: <MdDarkMode className="w-6 h-6" />
+  },
+  lightMode: {
+    name: 'Light Mode',
+    color: '#000',
+    icon: <MdBrightnessHigh className="w-6 h-6" />
   },
   reactNative: {
     name: 'React Native',
@@ -119,13 +137,31 @@ export const TECH: Record<string, Tech> = {
     color: '#8b5cf6',
     icon: <SiGooglegemini className="w-4 h-4" />
   },
-  zustand: {
-    name: 'Zustand',
-    color: '#f97316',
-    icon: (
-      <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M12 2C9.243 2 7 4.243 7 7c0 1.284.485 2.454 1.28 3.344C6.082 11.83 4 14.18 4 17c0 2.757 2.243 5 5 5h6c2.757 0 5-2.243 5-5 0-2.82-2.082-5.17-4.28-6.656C16.515 9.454 17 8.284 17 7c0-2.757-2.243-5-5-5zm-3.5 5c.828 0 1.5.672 1.5 1.5S9.328 10 8.5 10 7 9.328 7 8.5 7.672 7 8.5 7zm7 0c.828 0 1.5.672 1.5 1.5S16.328 10 15.5 10 14 9.328 14 8.5 14.672 7 15.5 7zm-3.5 4.5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5z" />
-      </svg>
-    )
-  }
+  angular:
+  {
+    name: 'Angular',
+    icon: <SiAngular />,
+    color: '#dd0031'
+  },
+  mongodb:
+  {
+    name: 'MongoDB',
+    icon: <SiMongodb />,
+    color: '#47a248'
+  },
+  ionic: {
+    name: 'Ionic',
+    color: '#3880ff',
+    icon: <SiIonic className="w-4 h-4" />
+  },
+  springBoot: {
+    name: 'Spring Boot',
+    color: '#6db33f',
+    icon: <SiSpringboot className="w-4 h-4" />
+  },
+  java: {
+    name: 'Java',
+    color: '#f89820',
+    icon: <SiJavascript className="w-4 h-4" />
+  },
 }

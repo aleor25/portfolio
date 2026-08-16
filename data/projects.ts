@@ -1,4 +1,4 @@
-import type { Tech, Action, Project } from '@/types/project'
+import type { Project } from '@/types/project'
 import { TECH } from './technologies'
 
 export const projects: Project[] = [
@@ -50,6 +50,59 @@ export const projects: Project[] = [
     ],
     actions: [
       { label: 'actions.goToCode', url: 'https://github.com/aleor25/REDOC', type: 'outline' }
+    ]
+  },
+  {
+    id: 'dabetai',
+    title: 'projects.dabetai.title',
+    description: 'projects.dabetai.description',
+    images: [
+      '/projects/dabetai/landing-page.webp',
+      '/projects/dabetai/restful-api.webp',
+      '/projects/dabetai/complication-prediction-core-ai.webp',
+      '/projects/dabetai/medical-portal-oversight.webp',
+
+    ],
+    mockupBackgroundColor: '#0ea5e9',
+    technologies: [
+      TECH.angular,
+      TECH.reactNative,
+      TECH.tailwind,
+      TECH.postgresql,
+      TECH.mongodb,
+      TECH.python
+    ],
+    actions: [
+      { label: 'actions.goToWebsite', url: 'https://dabetai.netlify.app/es/', type: 'gradient' },
+      { label: 'actions.goToCode', url: 'https://github.com/dabetai-org', type: 'outline' },
+      { label: 'actions.readArticle', url: '/projects/dabetai/Prevención-de-Riesgos-de-la-Diabetes-Mediante-una-Plataforma-Inteligente-de-Monitorización-y-Predicción-de-Complicaciones-con-Inteligencia-Artificial.pdf', type: 'outline' }
+    ]
+  },
+  {
+    id: 'iapex',
+    title: 'projects.iapex.title',
+    description: 'projects.iapex.description',
+    images: [
+      '/projects/iapex/general.webp',
+      '/projects/iapex/neural-core.webp',
+      '/projects/iapex/the-mobile-client-family-side.webp',
+      '/projects/iapex/the-web-portal-institutional-side.webp',
+    ],
+    mockupBackgroundColor: '#0ea5e9',
+    technologies: [
+      TECH.angular,
+      TECH.react,
+      TECH.ionic,
+      TECH.springBoot,
+      TECH.java,
+      TECH.postgresql,
+      TECH.mongodb,
+      TECH.python
+    ],
+    actions: [
+      { label: 'actions.watchDemo', url: 'https://www.youtube.com/watch?v=WPlo9SK-dgw', type: 'gradient' },
+      { label: 'actions.goToCode', url: 'https://github.com/iapex-org', type: 'outline' },
+      { label: 'actions.readArticle', url: '/projects/iapex/166-A-Hybrid-Artificial-Intelligent-System-for-Missing.pdf', type: 'outline' }
     ]
   }
 ]

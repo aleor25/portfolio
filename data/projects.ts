@@ -1,15 +1,5 @@
-import type { Tech, Action } from '../components/ProjectCard'
+import type { Tech, Action, Project } from '@/types/project'
 import { TECH } from './technologies'
-
-export type Project = {
-  id: string
-  title: string
-  description: string
-  images: string[]
-  mockupBackgroundColor?: string
-  technologies: Tech[]
-  actions: Action[]
-}
 
 export const projects: Project[] = [
   {
@@ -20,7 +10,6 @@ export const projects: Project[] = [
       '/projects/azkali/general.webp',
       '/projects/azkali/ai-mobile-experience.webp',
       '/projects/azkali/product-landing-page.webp',
-      '/projects/azkali/ai-and-supabase-backend.webp'
     ],
     mockupBackgroundColor: '#064e3b',
     technologies: [
@@ -36,7 +25,9 @@ export const projects: Project[] = [
     ],
     actions: [
       { label: 'actions.watchDemo', url: 'https://www.youtube.com/watch?v=orvfws_kxcc', type: 'gradient' },
-      { label: 'actions.goToCode', url: 'https://github.com/chrisssp/azkali', type: 'outline' }
+      { label: 'actions.goToCode', url: 'https://github.com/chrisssp/azkali', type: 'outline' },
+      { label: 'actions.goToWebsite', url: 'https://azkali-landing.vercel.app/', type: 'outline' }
+
     ]
   },
   {
@@ -58,7 +49,6 @@ export const projects: Project[] = [
       TECH.fastapi,
     ],
     actions: [
-      { label: 'actions.viewDetails', url: '#', type: 'gradient' },
       { label: 'actions.goToCode', url: 'https://github.com/aleor25/REDOC', type: 'outline' }
     ]
   }

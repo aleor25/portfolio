@@ -1,7 +1,7 @@
-import React from 'react'
-import type { Tech } from '../components/ProjectCard'
+import type { Tech } from '@/types/project'
 
 import {
+  SiGmail,
   SiReact,
   SiExpo,
   SiNextdotjs,
@@ -14,7 +14,47 @@ import {
   SiGooglegemini
 } from 'react-icons/si'
 
+import { TbCopy, TbDownload } from "react-icons/tb";
+
+import { RiLinkedinBoxFill, RiGithubFill, RiCopyrightLine, RiArrowUpSLine } from 'react-icons/ri'
+
+
 export const TECH: Record<string, Tech> = {
+  linkedin: {
+    name: 'LinkedIn',
+    color: '#0077b5',
+    icon: <RiLinkedinBoxFill className="w-12 h-12" />
+  },
+  github: {
+    name: 'GitHub',
+    color: '#333',
+    icon: <RiGithubFill className="w-11 h-11" />
+  },
+  gmail: {
+    name: 'Gmail',
+    color: '#ea4335',
+    icon: <SiGmail className="w-6 h-6" />
+  },
+  copy: {
+    name: 'Copy',
+    color: '#000',
+    icon: <TbCopy className="w-4 h-4" />
+  },
+  download: {
+    name: 'Download',
+    color: '#000',
+    icon: <TbDownload className="w-6 h-6" />
+  },
+  arrowUp: {
+    name: 'Arrow Up',
+    color: '#000',
+    icon: <RiArrowUpSLine className="w-6 h-6" />
+  },
+  copyright: {
+    name: 'Copyright',
+    color: '#000',
+    icon: <RiCopyrightLine className="w-4 h-4" />
+  },
   reactNative: {
     name: 'React Native',
     color: '#61dafb',

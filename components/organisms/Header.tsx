@@ -33,8 +33,8 @@ export default function Header() {
 
     const navItems = [
         { id: 'sobre-mi', label: t('header.sobreMi'), minWidth: 'min-w-[120px]' },
+        { id: 'experiencia', label: t('header.experiencia'), minWidth: 'min-w-[135px]' },
         { id: 'proyectos', label: t('header.proyectos'), minWidth: 'min-w-[120px]' },
-        { id: 'experiencia', label: t('header.experiencia'), minWidth: 'min-w-[135px]' }
     ]
 
     return (

@@ -1,6 +1,5 @@
 {
   "header": {
-    "title": "My Portfolio",
     "experiencia": "Experience",
     "proyectos": "Projects",
     "sobreMi": "About"
@@ -15,7 +14,10 @@
       "linkedin": "Alejandro Ortiz LinkedIn profile"
     },
     "copyEmail": "Copy email",
-    "copied": "Copied to clipboard!"
+    "copied": "Copied to clipboard!",
+    "cvFile": "/cv/Alejandro_Ortiz_CV_FullStack_Developer.pdf",
+    "cvDownloadName": "Alejandro_Ortiz_CV_FullStack_Developer.pdf",
+    "downloadCv": "Download CV"
   },
   "projects": {
     "title": "Projects",

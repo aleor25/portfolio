@@ -33,7 +33,7 @@ export default function AboutMe() {
                             <div className="relative flex items-center">
                                 <button
                                     onClick={handleCopyEmail}
-                                    className="flex items-center gap-3 bg-white dark:bg-neutral-900/90 border border-neutral-200 dark:border-white/10 hover:border-neutral-300 dark:hover:border-white/20 text-neutral-700 dark:text-gray-200 hover:text-black dark:hover:text-white px-5 h-12 rounded-2xl text-base font-mono transition-all duration-300 group shadow-lg focus:outline-none"
+                                    className="flex items-center gap-3 bg-white dark:bg-neutral-900/90 border border-neutral-200 dark:border-white/10 hover:border-neutral-300 dark:hover:border-white/20 text-neutral-700 dark:text-gray-200 hover:text-black dark:hover:text-white px-5 h-12 rounded-2xl text-base font-mono transition-all duration-300 group shadow-lg focus:outline-none cursor-pointer"
                                     title={t('profile.copyEmail')}
                                 >
                                     {TECH.gmail.icon}
@@ -59,15 +59,15 @@ export default function AboutMe() {
 
                         <div>
                             <a
-                                href="/cv/Alejandro_Ortiz_CV_Desarrollador_FullStack.pdf"
+                                href={t("profile.cvFile")}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                download
+                                download={t("profile.cvDownloadName")}
                                 className="inline-flex items-center gap-2.5 px-6 h-12 rounded-2xl bg-sky-500 text-neutral-950 font-bold hover:bg-sky-400 transition-all duration-300 shadow-[0_0_15px_rgba(14,165,233,0.3)] hover:shadow-[0_0_25px_rgba(14,165,233,0.5)] active:scale-95"
                                 aria-label="Descargar Curriculum Vitae"
                             >
                                 {TECH.download.icon}
-                                <span>Currículum</span>
+                                <span>{t("profile.downloadCv")}</span>
                             </a>
                         </div>
                     </div>

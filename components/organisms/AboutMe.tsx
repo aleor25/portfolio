@@ -59,7 +59,7 @@ export default function AboutMe() {
 
                         <div>
                             <a
-                                href="/cv/Alejandro_Ortiz_Pérez_CV_Desarrollador_FullStack.pdf"
+                                href="/cv/Alejandro_Ortiz_CV_Desarrollador_FullStack.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 download
